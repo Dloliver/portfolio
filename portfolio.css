@@ -1,0 +1,244 @@
+body{
+  background-color: rgb(244,239,233);
+  color: rgb(57,84,89);
+  margin-left: 20px;
+  margin-right: 20px;
+  color: rgb(248,183,50);
+  font-size: 25px;
+
+}
+
+
+a {
+  color: rgb(248,183,50);
+  text-align: center;
+}
+
+.tag{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h1{
+  text-align: left;
+  font-size: 50px;
+}
+
+#about {
+  text-align: right;
+  font-size: 40px;
+}
+
+.about {
+  text-align: center;
+}
+
+.top{
+  background-color: rgb(248,183,50);
+  color: white;
+}
+
+.about{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#tech {
+  color:rgb(209,125,5);
+  text-align: center;
+}
+
+#project1{
+  color:rgb(209,125,5);
+  text-align: center;
+  margin-left: 40px;
+}
+
+#project2{
+  color:rgb(209,125,5);
+  text-align: center;
+  margin-left: 40px;
+
+}
+
+#project3{
+  color:rgb(209,125,5);
+  text-align: center;
+  margin-left: 40px;
+}
+
+#social{
+  color:rgb(209,125,5);
+  text-align: center;
+
+}
+
+.social{
+  text-align: center;
+}
+
+img{
+  display: block;
+  height: 15em;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+}
+
+div{
+  background-color: rgb(88,93,99);
+  border-radius: 15px;
+  margin: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+
+#nav{
+  color: rgb(88,93,99);
+  border-radius: 10px;
+}
+
+.circular--portrait {
+
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+
+.justify {
+text-align: left;
+width: 70%;
+font-size: 30px;
+margin-top: 45px;
+padding-left: 150px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(248,183,50);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(248,183,50);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  position: sticky; top:0;
+}
+
+.openbtn:hover {
+  background-color: rgb(248,183,50);
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 10px;
+  position: sticky; top:0;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapse_sidebar   */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/* ON screens that are 600px or less, align everything center. */
+@media screen and (max-width: 1200px) {
+
+  .circular--portrait {
+    display: block;
+    padding-left: auto;
+    padding-right: auto;
+  }
+
+  .justify {
+    text-align: center;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 20px;
+
+  }
+
+  p {
+    text-align: center;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 20px;
+
+  }
+
+  h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  #about {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  #project1{
+    width: 80%;
+  }
+
+  #project2{
+    width: 80%;
+  }
+
+  #project3{
+    width: 80%; }
+
+  a {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+}
